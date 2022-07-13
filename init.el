@@ -17,8 +17,8 @@
 
 (eval-when-compile
   (require 'use-package))
-(require 'bind-key)
-(require 'diminish)
+(use-package diminish
+  :commands (diminish))
 
 (use-package direnv
   :ensure t
